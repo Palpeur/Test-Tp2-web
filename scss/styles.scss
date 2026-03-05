@@ -1,0 +1,105 @@
+/** VOS $VARIABLES Scss ici avant, l'importation de partials/bootstrap**/
+/* C'est ici que vous pouvez définir VOS variables Scss personnalisées*/
+
+/* Vous pouvez égalemenr redéfinir une variable de Bootstrap, en la redéfinissant AVANT l'importation de Boostrap (partials/bootstrap). 
+Par exemple, pour changer la couleur primaire de Bootstrap : */
+
+
+
+
+/*** Importation de Boostrap **/
+/* Cette ligne importe tout le code de Bootstrap, y compris les variables, mixins, fonctions, etc. */
+/* C'est une forme d'installation LOCALE de Bootstrap. Ne pas toucher */
+@import "partials/_bootstrap.scss";
+
+
+/*** Début des styles personnalisés ***/
+// Exemple de style personnalisé
+
+.logo {
+    font-size: 3em;
+}
+
+.index-h2 {
+    font-size: 3em;
+}
+footer{
+    .card{
+        transition: all 0.3s;
+
+		&:hover {
+			transform:scale(1.2)
+		}
+    }
+}
+
+.texte-pour-lecteur {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	word-wrap: normal !important;
+}
+
+// /* Exemple de comment redéfinir une classe existante de Bootstrap */
+// .btn-primary {
+//     background-color: rgb(136, 72, 255);
+//     border-color: rgb(83, 83, 83);
+// }
+
+
+.bg-primary {
+    background-color: #c29668 !important;
+}
+
+.bg-secondary {
+    background-color: #4e3d2e !important;
+}
+
+.bg-light {
+    background-color: #ece0d3 !important;
+}
+
+.bg-warning {
+    background-color: #98413D !important;
+}
+
+.text-secondary {
+    color: #4e3d2e !important;
+}
+.text-warning {
+    color: #98413D !important;
+}
+
+.btn-secondary {
+    background-color: #4e3d2e !important;
+    border-color: #4e3d2e !important;
+}
+
+.btn-info {
+    background-color: #8984a1 !important;
+    border-color: #8984a1 !important;
+}
+
+.btn-danger {
+    background-color: #83a65b !important;
+    border-color: #83a65b !important;
+}
+
+.btn-warning {
+    background-color: #98413D !important;
+    border-color: #98413D !important;
+}
+
+.border-secondary {
+    border-color: #4e3d2e !important;
+}
+
+.link-light {
+    color: #ece0d3 !important;
+}

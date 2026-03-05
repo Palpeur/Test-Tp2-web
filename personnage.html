@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<!-- FAIT PAR J-p -->
+
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Pour s'assurer d'un affichage correct sur mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Nous n'aurons pas besoin de normalize.css, car il existe des styles
+    qui font la même chose dans Bootstrap (voir fichier _reboot.scss) -->
+
+    <!-- Bootstrap Icons via CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Styles de Boostrap + Styles personnalisés provenant de styles.scss -->
+    <link rel="stylesheet" href="scss/styles.css">
+
+    <link rel="icon" href="images/mt_logo_rond.png" />
+    <title>Mushoku Tensei Fandom | Personnage </title>
+</head>
+
+
+<body class="bg-light">
+    <a href="#contenu">
+        <span class="texte-pour-lecteur">Aller au contenu principal</span>
+    </a>
+    <header class="bg-primary">
+        <div class=" container d-flex justify-content-between align-items-center">
+            <a href="index.html" class="logo d-block"><img class="p-2 w-100" src="images/mt-logo.png" alt="Logo"> </a>
+            <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Ouvrir une session
+            </button>
+        </div>
+
+        <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog ">
+                <div class="modal-content ">
+                    <div class="modal-header">
+                        <h2 class="modal-title fs-3" id="exampleModalLabel">Ouvrir une session</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="#" aria-label="formulaire connexion">
+                            <label class="form-label fs-5" for="email-modal">Usager <span
+                                    class="text-warning fs-4">*</span></label>
+                            <input type="email" id="email-modal" name="email-modal" required
+                                placeholder="votre courriel" class="form-control">
+
+                            <label class="form-label mt-3 fs-5" for="password-modal">Mot de passe : <span
+                                    class="text-warning fs-4">*</span></label>
+                            <input type="password" id="password-modal" name="psw-connexion" required
+                                placeholder="Votre mot de passe" class="form-control">
+
+                            <div class="form-check-reversed ">
+                                <label class="form-check-label" for="checkDefault">
+                                    Se rappeler de moi
+                                </label>
+                                <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                            </div>
+
+                            <a class="text-secondary" href="#">Mot de passe oublier ?</a>
+
+                            <div class="mt-4 modal-footer">
+                                <button type="submit" class="btn btn-danger">Connexion</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <nav aria-label="Navigation principale" class=" bg-secondary d-lg-flex d-none pt-1 pb-2">
+            <ul class="nav container nav-underline">
+                <li class="nav-item"><a class="nav-link link-light" href="index.html">Accueil</a> </li>
+                <li class="nav-item"><a class="nav-link link-light" href="personnage.html">Personnage</a> </li>
+                <li class="nav-item"><a class="nav-link link-light" href="description_personnage.html">Info
+                        Personnage</a> </li>
+                <li class="nav-item"><a class="nav-link link-light" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="d-lg-none">
+            <nav class="navbar navbar-dark bg-secondary">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </nav>
+
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div class="bg-secondary p-4">
+                    <ul class="navbar-nav container">
+                        <li class="nav-item"><a class="nav-link link-light" href="index.html">Accueil</a> </li>
+                        <li class="nav-item"><a class="nav-link link-light" href="personnage.html">Personnage</a> </li>
+                        <li class="nav-item"><a class="nav-link link-light" href="description_personnage.html">Info Personnage</a> </li>    
+                        <li class="nav-item"><a class="nav-link link-light" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    </header>
+
+    <div class="container">
+        <div class=" row mt-5 mb-5">
+            <aside class="col-12 col-lg-3 mb-4">
+                <div class="bg-primary rounded-4 border border-secondary border-4">
+                    <form class="text-black p-3" aria-label="formulaire abonnement Newsletter">
+                        <h2 class="text-black mb-4 mt-2">Newsletter</h2>
+                        <div class="mb-3">
+                            <label class="form-label fs-4" for="nom">Nom <span class="text-warning ">*</span></label>
+                            <input type="text" id="nom" name="nom" required placeholder="Votre nom"
+                                class="form-control">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label fs-4" for="prenom">Prénom <span
+                                    class="text-warning ">*</span></label>
+                            <input type="text" id="prenom" name="prenom" required placeholder="Votre prénom"
+                                class="form-control">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label fs-4" for="email">Courriel <span
+                                    class="text-warning ">*</span></label>
+                            <input type="email" id="email" name="email" required placeholder="Votre courriel"
+                                class="form-control">
+                        </div>
+
+                        <div class="mb-3 form-check">
+                            <label class="form-check-label" for="check"> J'accepte de recevoir des
+                                communications</label>
+                            <input type="checkbox" id="check" name="check"
+                                class="form-check-input border-2 border-secondary bg-warning">
+                        </div>
+                        <div class="mb-3">
+                            <button class="btn btn-warning text-white" type="submit">S'abonner</button>
+                        </div>
+                    </form>
+                </div>
+            </aside>
+            <main id="contenu" aria-label="Contenu principale" class="col-lg-9">
+                <h1>Liste des personnages</h1>
+                <div class=" mt-3 text-center ">
+                    <div class=" row row-cols-1 row-cols-lg-3 g-4 ">
+
+                        <div class="col-lg-4">
+                            <div class="card h-100">
+                                <div class="card-img-top">
+                                    <img class="w-100 rounded-1 card-img-top" src="images/mt_rudeus_wide.webp"
+                                        alt="rudeus photo">
+                                </div>
+                                <div class="card-body text-start">
+                                    <h2 class="card-title">Rudeus</h2>
+                                    <p class="card-text">Fort de son expérience passée, Rudeus veille à ne pas se laisser
+                                         emporter par la confiance et à ne pas devenir arrogant. De ce fait, il est extrêmement 
+                                         conscient de lui-même et humble, car il ne souhaite pas redevenir son lui du passé.</p>
+
+                                </div>
+                                <div class="card-footer d-flex align-items-start">
+                                    <a href="description_personnage.html#rudeus" class="btn btn-danger text-black">En Savoir
+                                        Plus</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card h-100">
+                                <div class="card-img-top">
+                                    <img class="w-100 rounded-1" src="images/mt_roxy_wide.jpg" alt="roxy photo">
+                                </div>
+                                <div class="card-body text-start">
+                                    <h2 class="card-title">Roxy</h2>
+                                    <p class="card-text">Roxy est une personne calme et posée, dotée d'une
+                                         grande sagesse et toujours soucieuse de s'améliorer. Très intelligente, 
+                                         elle sait analyser les informations et tirer des conclusions logiques.</p>
+                                </div>
+                                <div class="card-footer d-flex align-items-start">
+                                    <a href="description_personnage.html#rudeus" class="btn btn-danger text-black">En Savoir
+                                        Plus</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card h-100">
+                                <div class="card-img-top">
+                                    <img class="w-100 rounded-1" src="images/mt_silphie_wide.jpg" alt="silphie photo">
+                                </div>
+                                <div class="card-body text-start">
+                                    <h2 class="card-title">Sylphie</h2>
+                                    <p class="card-text">Bien que douce et conciliante envers Rudeus, 
+                                        elle est très jalouse des autres femmes qui s'approchent de lui, même si elle ne le montre pas.</p>
+                                </div>
+                                <div class="card-footer d-flex align-items-start">
+                                    <a href="description_personnage.html#rudeus" class="btn btn-danger text-black">En Savoir
+                                        Plus</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card h-100">
+                                <div class="card-img-top">
+                                    <img class="w-100 rounded-1" src="images/mt_eris_wide.avif" alt="eris photo">
+                                </div>
+                                <div class="card-body text-start">
+                                    <h2 class="card-title">Eris</h2>
+                                    <p class="card-text">Lors de sa rencontre avec Rudeus, Éris se montra méprisante, impulsive, insolente et condescendante ;
+                                         elle était également colérique et sujette à des accès de violence. On comprend que son attitude était directement influencée 
+                                         par son grand-père, Sauros.</p>
+                                </div>
+                                <div class="card-footer d-flex align-items-start">
+                                    <a href="description_personnage.html#rudeus" class="btn btn-danger text-black">En Savoir
+                                        Plus</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer class="bg-primary p-2">
+        <div class="d-flex justify-content-center">
+            <h2 class="mt-4"> Pour nous Joindre </h2>
+        </div>
+        <div class="container text-center">
+            <div class="row row-gap-3 mt-5">
+                <div class="col-lg-4 d-flex justify-content-center">
+                    <div class="card align-items-center bg-light w-50 fs-1 rounded-4">
+                        <i class="bi bi-discord"></i>
+                        <div class="card-body w-100 ">
+                            <a href="#" class="btn btn-danger text-black">Discord</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 d-flex justify-content-center">
+                    <div class="card align-items-center bg-light w-50 fs-1 rounded-4">
+                        <i class="bi bi-envelope-at-fill"></i>
+                        <div class="card-body w-100">
+                            <a href="#" class="btn btn-danger text-black">Email</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 d-flex justify-content-center">
+                    <div class="card align-items-center bg-light w-50 fs-1 rounded-4">
+                        <i class="bi bi-instagram"></i>
+                        <div class="card-body w-100">
+                            <a href="#" class="btn btn-danger text-black">Instagram</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center mt-4">
+            <p class="text-black fs-6"> Concepteur du site: Matys Faber / Jean-Philippe Beaudoin </p>
+        </div>
+    </footer>
+    <!-- Scripts de Bootstrap NE PAS RETIRER -->
+    <!------------------------------------------------------------------------------------
+        Si on a besoin des éléments interactifs de Bootstrap, on doit utiliser au minimum
+        le 2e script suivant (bootstrap.min.js) et parfois le 1er en plus (Popper)
+        intégrés dans cet ordre.
+    ------------------------------------------------------------------------------------>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

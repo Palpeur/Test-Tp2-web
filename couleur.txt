@@ -1,0 +1,6 @@
+#c29668 beige primary
+#4e3d2e brun secondary
+#ece0d3 blancPale light
+#8984a1 blue info
+#83a65b green danger
+#98413D red warning
