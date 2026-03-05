@@ -37,21 +37,21 @@
             <h1>
                 <a href="index.html"><img class="p-2 w-100" src="images/mt-logo.png" alt="Logo"> </a>
             </h1>
-            <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modalAccueil">
                 Ouvrir une session
             </button>
         </div>
 
-        <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade " id="modalAccueil" tabindex="-1" aria-labelledby="modalAccueilLabel" aria-hidden="true">
             <div class="modal-dialog ">
                 <div class="modal-content ">
                     <div class="modal-header">
-                        <h2 class="modal-title fs-3" id="exampleModalLabel">Ouvrir une session</h2>
+                        <h2 class="modal-title fs-3" id="modalAccueilLabel">Ouvrir une session</h2>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form action="#" aria-label="formulaire connexion">
-                            <label class="form-label fs-5" for="email-modal">Usager <span
+                        <form action="#" aria-label="formulaire connexion accueil">
+                            <label class="form-label fs-5" for="email-modal">Usager : <span
                                     class="text-warning fs-4">*</span></label>
                             <input type="email" id="email-modal" name="email-modal" required
                                 placeholder="votre courriel" class="form-control">
@@ -68,7 +68,7 @@
                                 <input class="form-check-input" type="checkbox" value="" id="checkDefault">
                             </div>
 
-                            <a class="text-secondary" href="#">Mot de passe oublier ?</a>
+                            <a class="text-secondary" href="#">Mot de passe oublié ?</a>
 
                             <div class="mt-4 modal-footer">
                                 <button type="submit" class="btn btn-danger">Connexion</button>
@@ -80,12 +80,11 @@
             </div>
         </div>
 
-        <nav aria-label="Navigation principale" class="bg-secondary d-lg-flex d-none pt-1 pb-2">
+        <nav aria-label="Navigation principale accueil" class="bg-secondary d-lg-flex d-none pt-1 pb-2">
             <ul class="nav container nav-underline">
                 <li class="nav-item"><a class="nav-link link-light" href="index.html">Accueil</a> </li>
-                <li class="nav-item"><a class="nav-link link-light" href="personnage.html">Personnage</a> </li>
-                <li class="nav-item"><a class="nav-link link-light" href="description_personnage.html">Info
-                        Personnage</a> </li>
+                <li class="nav-item"><a class="nav-link link-light" href="personnage.html">Personnages</a> </li>
+                <li class="nav-item"><a class="nav-link link-light" href="description_personnage.html">Description des personnages</a> </li>
                 <li class="nav-item"><a class="nav-link link-light" href="contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -105,8 +104,8 @@
                 <div class="bg-secondary p-4">
                     <ul class="navbar-nav container">
                         <li class="nav-item"><a class="nav-link link-light" href="index.html">Accueil</a> </li>
-                        <li class="nav-item"><a class="nav-link link-light" href="personnage.html">Personnage</a> </li>
-                        <li class="nav-item"><a class="nav-link link-light" href="description_personnage.html">Info Personnage</a> </li>
+                        <li class="nav-item"><a class="nav-link link-light" href="personnage.html">Personnages</a> </li>
+                        <li class="nav-item"><a class="nav-link link-light" href="description_personnage.html">Description des personnages</a> </li>
                                 
                         <li class="nav-item"><a class="nav-link link-light" href="contact.html">Contact</a></li>
                     </ul>
@@ -116,11 +115,11 @@
         </div>
     </header>
 
-    <main id="contenu" aria-label="Contenu principale" class="container pb-3 p-2">
+    <main id="contenu" aria-label="Contenu principale accueil" class="container pb-3 p-2">
         <div class=" row">
             <div class="col-lg-6">
                 <h2 class="index-h2"> Bienvenue </h2>
-                <p>tout le monde : Wow. (le tram entre sur le plancher de l'usine) Barry : Wow. Trudy : Nous savons que
+                <p>Tout le monde : Wow. (le tram entre sur le plancher de l'usine) Barry : Wow. Trudy : Nous savons que
                     toi, en tant qu'abeille, tu as travaillé toute ta vie pour en arriver au point où tu peux travailler
                     toute ta vie. Le miel commence quand nos vaillants Pollen Jocks apportent le nectar à la ruche.
                     Notre formule top secrète est automatiquement corrigée en couleur, ajustée en parfum et contournée
@@ -130,9 +129,7 @@
                     : C'est ma cousine ! Adam : Elle l'est ? Barry : Oui, nous sommes tous cousins. Adam : D'accord. Tu
                     as raison. Trudy : Chez Honex, nous nous efforçons également d'améliorer constamment tous les
                     aspects de l'existence des abeilles. Ces abeilles testent une nouvelle technologie de casque en
-                    situation de stress. Derrière une vitre d'exposition, une abeille met un casque, puis court d'avant
-                    en arrière alors que des leviers tenant un magazine roulé, une tapette à mouches et une chaussure
-                    descendent pour essayer</p>
+                    situation de stress.</p>
             </div>
             <div class="col-lg-6 p-4 pb-5">
                 <div id="carouselExample" class="carousel slide">
@@ -180,7 +177,7 @@
                     <div class="card align-items-center bg-light w-50 fs-1 rounded-4">
                         <i class="bi bi-envelope-at-fill"></i>
                         <div class="card-body w-100">
-                            <a href="#" class="btn btn-danger text-black">Email</a>
+                            <a href="#" class="btn btn-danger text-black">Courriel</a>
                         </div>
                     </div>
                 </div>
@@ -195,7 +192,7 @@
             </div>
         </div>
         <div class="d-flex justify-content-center mt-4">
-            <p class="text-black fs-6"> Concepteur du site: Matys Faber / Jean-Philippe Beaudoin </p>
+            <p class="text-black fs-6"> Concepteurs du site: Matys Faber / Jean-Philippe Beaudoin </p>
         </div>
     </footer>
 

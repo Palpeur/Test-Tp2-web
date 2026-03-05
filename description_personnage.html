@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="scss/styles.css">
 
     <link rel="icon" href="images/mt_logo_rond.png" />
-    <title>Mushoku Tensei Fandom | Info personnage</title>
+    <title>Mushoku Tensei Fandom | Description des personnages</title>
 </head>
 
 
@@ -32,21 +32,21 @@
     <header class="bg-primary">
         <div class="container d-flex justify-content-between align-items-center">
             <a href="index.html" class=" logo "><img class="p-2 w-100" src="images/mt-logo.png" alt="Logo"> </a>
-             <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal">
+             <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modalDescription">
                 Ouvrir une session
             </button>
         </div>
 
-         <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal fade " id="modalDescription" tabindex="-1" aria-labelledby="modalDescriptionLabel" aria-hidden="true">
             <div class="modal-dialog ">
                 <div class="modal-content ">
                     <div class="modal-header">
-                        <h2 class="modal-title fs-3" id="exampleModalLabel">Ouvrir une session</h2>
+                        <h2 class="modal-title fs-3" id="modalDescriptionLabel">Ouvrir une session</h2>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form action="#" aria-label="formulaire Connexion">
-                            <label class="form-label fs-5" for="email-modal">Usager <span
+                        <form action="#" aria-label="formulaire Connexion description personnage">
+                            <label class="form-label fs-5" for="email-modal">Usager : <span
                                     class="text-warning fs-4">*</span></label>
                             <input type="email" id="email-modal" name="email-modal" required
                                 placeholder="votre courriel" class="form-control">
@@ -63,7 +63,7 @@
                                 <input class="form-check-input" type="checkbox" value="" id="checkDefault">
                             </div>
 
-                            <a class="text-secondary" href="#">Mot de passe oublier ?</a>
+                            <a class="text-secondary" href="#">Mot de passe oublié ?</a>
 
                             <div class="mt-4 modal-footer">
                                 <button type="submit" class="btn btn-danger">Connexion</button>
@@ -75,12 +75,11 @@
             </div>
         </div>
 
-        <nav class="bg-secondary d-lg-flex d-none pt-1 pb-2">
+        <nav class="bg-secondary d-lg-flex d-none pt-1 pb-2" aria-label="navigation principal description personnage">
             <ul class="nav container nav-underline">
                 <li class="nav-item"><a class="nav-link link-light" href="index.html">Accueil</a> </li>
-                <li class="nav-item"><a class="nav-link link-light" href="personnage.html">Personnage</a> </li>
-                <li class="nav-item"><a class="nav-link link-light" href="description_personnage.html">Info
-                        Personnage</a> </li>
+                <li class="nav-item"><a class="nav-link link-light" href="personnage.html">Personnages</a> </li>
+                <li class="nav-item"><a class="nav-link link-light" href="description_personnage.html">Description des personnages</a> </li>
                 <li class="nav-item"><a class="nav-link link-light" href="contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -100,8 +99,8 @@
                 <div class="bg-secondary p-4">
                     <ul class="navbar-nav container">
                         <li class="nav-item"><a class="nav-link link-light" href="index.html">Accueil</a> </li>
-                        <li class="nav-item"><a class="nav-link link-light" href="personnage.html">Personnage</a> </li>
-                        <li class="nav-item"><a class="nav-link link-light" href="description_personnage.html">Info Personnage</a> </li>    
+                        <li class="nav-item"><a class="nav-link link-light" href="personnage.html">Personnages</a> </li>
+                        <li class="nav-item"><a class="nav-link link-light" href="description_personnage.html">Description des personnages</a> </li>    
                         <li class="nav-item"><a class="nav-link link-light" href="contact.html">Contact</a></li>
                     </ul>
                 </div>
@@ -114,30 +113,32 @@
         <div class=" row mt-5 mb-5">
             <aside class="col-12 col-lg-3 mb-4">
                 <div class="bg-primary rounded-4 border border-secondary border-4">
-                    <form class="text-black p-3" aria-label="formulaire abonnement Newsletter">
+                    <form class="text-black p-3" aria-label="formulaire Newsletter personnage">
                         <h2 class="text-black mb-4 mt-2">Newsletter</h2>
                         <div class="mb-3">
-                            <label class="form-label fs-4" for="nom">Nom <span class="text-warning ">*</span></label>
+                            <label class="form-label fs-4" for="Prénom">Prénom <span class="text-warning ">*</span></label>
+                            <input type="text" id="Prénom" name="Prénom" required placeholder="Votre Prénom"
+                                class="form-control">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label fs-4" for="Nom">Nom <span
+                                    class="text-warning ">*</span></label>
                             <input type="text" id="nom" name="nom" required placeholder="Votre nom"
                                 class="form-control">
                         </div>
 
                         <div class="mb-3">
-                            <label class="form-label fs-4" for="prenom">Prénom <span class="text-warning ">*</span></label>
-                            <input type="text" id="prenom" name="prenom" required placeholder="Votre prénom"
-                                class="form-control">
-                        </div>
-
-                        <div class="mb-3">
-                            <label class="form-label fs-4" for="email">Courriel <span class="text-warning ">*</span></label>
-                            <input type="email" id="email" name="email" required placeholder="Votre courriel"
+                            <label class="form-label fs-4" for="courriel">Courriel <span
+                                    class="text-warning ">*</span></label>
+                            <input type="email" id="courriel" name="coourriel" required placeholder="Votre courriel"
                                 class="form-control">
                         </div>
 
                         <div class="mb-3 form-check">
-                            <label class="form-check-label" for="check"> J'accepte de recevoir des
+                            <label class="form-check-label" for="checkNewsletter"> J'accepte de recevoir des
                                 communications</label>
-                            <input type="checkbox" id="check" name="check"
+                            <input type="checkbox" id="checkNewsLetter" name="checkNewsletter"
                                 class="form-check-input border-2 border-secondary bg-warning">
                         </div>
                         <div class="mb-3">
@@ -146,7 +147,7 @@
                     </form>
                 </div>
             </aside>
-            <main id="contenu" aria-label="Contenu principale" class="col-lg-9">
+            <main id="contenu" aria-label="Contenu principale description personnage" class="col-lg-9">
                 <h1>Description des personnages</h1>
 
                 <div id="rudeus" class="mb-5 mt-2">
@@ -252,7 +253,7 @@
                     <div class="card align-items-center bg-light w-50 fs-1 rounded-4">
                         <i class="bi bi-envelope-at-fill"></i>
                         <div class="card-body w-100">
-                            <a href="#" class="btn btn-danger text-black">Email</a>
+                            <a href="#" class="btn btn-danger text-black">Courriel</a>
                         </div>
                     </div>
                 </div>
@@ -267,7 +268,7 @@
             </div>
         </div>
         <div class="d-flex justify-content-center mt-4">
-            <p class="text-black fs-6"> Concepteur du site: Matys Faber / Jean-Philippe Beaudoin </p>
+            <p class="text-black fs-6"> Concepteurs du site: Matys Faber / Jean-Philippe Beaudoin </p>
         </div>
     </footer>
 
